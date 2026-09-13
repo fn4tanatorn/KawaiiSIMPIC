@@ -14,6 +14,13 @@ export type TextbookSource =
   | 'Murray 9th Ed' 
   | 'Jawetz 28th Ed';
 
+export interface ClinicalImage {
+  src: string;
+  caption: string;
+  sourceRef: string;
+  alt: string;
+}
+
 export interface Question {
   id: string;
   stem: string;
@@ -30,6 +37,7 @@ export interface Question {
   latinNames?: string[];
   caseVignette?: boolean;
   tags?: string[];
+  image?: ClinicalImage;
 }
 
 export interface UserAnswerRecord {

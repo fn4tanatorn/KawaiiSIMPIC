@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Question } from '../types/question';
-import { Sparkles, BookOpen, Lightbulb } from 'lucide-react';
+import { Sparkles, BookOpen, Lightbulb, Microscope, Maximize2, X } from 'lucide-react';
 
 interface RationaleViewProps {
   question: Question;
@@ -8,10 +8,99 @@ interface RationaleViewProps {
 }
 
 export const RationaleView: React.FC<RationaleViewProps> = ({ question, selectedIndex }) => {
+  const [isZoomed, setIsZoomed] = useState<boolean>(false);
   const letters = ['A', 'B', 'C', 'D', 'E'];
 
   return (
     <div className="mt-6 space-y-5 animate-fadeIn">
+      {/* Clinical / Microscopic Exhibit (If available) */}
+      {question.image && (
+        <div className="bg-white/95 rounded-2xl border border-rose-100 overflow-hidden shadow-xs">
+          <div className="bg-rose-50/60 px-4 py-2.5 border-b border-rose-100 flex items-center justify-between">
+            <div className="flex items-center gap-2 text-xs font-bold text-rose-800">
+              <Microscope className="w-4 h-4 text-rose-500" />
+              <span>SIMPIC Microscopic & Clinical Exhibit</span>
+            </div>
+            <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-rose-100 text-rose-700">
+              Photo Quiz
+            </span>
+          </div>
+
+          <div className="p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+            {/* Image Thumbnail with zoom trigger */}
+            <div
+              onClick={() => setIsZoomed(true)}
+              className="relative group cursor-zoom-in shrink-0 w-full sm:w-56 h-48 rounded-xl overflow-hidden border border-slate-200 shadow-xs bg-slate-50 flex items-center justify-center"
+            >
+              <img
+                src={question.image.src}
+                alt={question.image.alt}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/60 text-white text-[11px] font-medium backdrop-blur-xs">
+                  <Maximize2 className="w-3 h-3" />
+                  คลิกเพื่อขยาย
+                </span>
+              </div>
+            </div>
+
+            {/* Caption & Citations */}
+            <div className="flex-1 space-y-2 text-left">
+              <div className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                <span>{question.image.alt}</span>
+              </div>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                {question.image.caption}
+              </p>
+              <div className="text-[11px] font-medium text-slate-400 pt-1">
+                Exhibit reference: <span className="text-slate-600 font-semibold">{question.image.sourceRef}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lightbox Modal for High-Res Image */}
+      {isZoomed && question.image && (
+        <div
+          onClick={() => setIsZoomed(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-fadeIn cursor-zoom-out"
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            className="relative max-w-3xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-800"
+          >
+            <button
+              onClick={() => setIsZoomed(false)}
+              className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <div className="p-2 sm:p-4 bg-slate-950 flex items-center justify-center max-h-[70vh]">
+              <img
+                src={question.image.src}
+                alt={question.image.alt}
+                className="max-h-[68vh] w-auto object-contain rounded-xl"
+              />
+            </div>
+            <div className="p-4 sm:p-5 bg-white">
+              <h5 className="text-sm font-bold text-slate-800 mb-1">
+                {question.image.alt}
+              </h5>
+              <p className="text-xs text-slate-600 leading-relaxed mb-2">
+                {question.image.caption}
+              </p>
+              <span className="text-[11px] text-slate-400 font-medium">
+                {question.image.sourceRef}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* High-Yield Pearls Box */}
       <div className="bg-amber-50/80 border border-amber-200/80 rounded-2xl p-4 shadow-xs">
         <div className="flex items-center gap-2 text-amber-900 font-bold text-sm mb-2">

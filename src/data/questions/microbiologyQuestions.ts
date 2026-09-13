@@ -33,7 +33,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Staphylococcus aureus", "Corynebacterium diphtheriae", "Pseudomonas aeruginosa", "Clostridium botulinum", "Clostridium tetani", "Clostridium perfringens"],
     caseVignette: true,
-    tags: ["TSS", "Superantigen", "Toxicology", "Staphylococcus"]
+    tags: ["TSS", "Superantigen", "Toxicology", "Staphylococcus"],
+    image: {
+      src: "/images/figures/staph-tss-rash.jpeg",
+      caption: "Cutaneous manifestation and soft-tissue involvement in fatal Staphylococcal Toxic Shock Syndrome, showing diffuse erythematous macular rash.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 18.5",
+      alt: "Toxic Shock Syndrome rash"
+    }
   },
   {
     id: "SIMPIC-BAC-002",
@@ -64,7 +70,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Staphylococcus aureus", "Bacillus cereus", "Clostridium perfringens", "Vibrio cholerae", "Escherichia coli"],
     caseVignette: true,
-    tags: ["Food Poisoning", "Enterotoxin", "Exotoxin"]
+    tags: ["Food Poisoning", "Enterotoxin", "Exotoxin"],
+    image: {
+      src: "/images/figures/staph-blood-agar.jpeg",
+      caption: "Staphylococcus aureus colonies on sheep blood agar exhibiting large, smooth, beta-hemolytic colonies with characteristic golden carotenoid pigment (staphyloxanthin).",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 18.8",
+      alt: "Staphylococcus aureus on sheep blood agar"
+    }
   },
   {
     id: "SIMPIC-BAC-003",
@@ -126,7 +138,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Streptococcus pyogenes"],
     caseVignette: true,
-    tags: ["Group A Strep", "PSGN", "M Protein", "Glomerulonephritis"]
+    tags: ["Group A Strep", "PSGN", "M Protein", "Glomerulonephritis"],
+    image: {
+      src: "/images/figures/strep-erysipelas.jpeg",
+      caption: "Acute stage of erysipelas of the leg caused by Streptococcus pyogenes (Group A Strep), demonstrating distinct raised erythema, advancing well-demarcated margins, and superficial bullae formation.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 19.3",
+      alt: "Streptococcus pyogenes erysipelas"
+    }
   },
   {
     id: "SIMPIC-BAC-005",
@@ -157,7 +175,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Streptococcus pneumoniae", "Streptococcus pyogenes", "Streptococcus agalactiae", "Enterococcus faecalis", "Enterococcus faecium", "Staphylococcus aureus", "Streptococcus gallolyticus", "Streptococcus mitis", "Streptococcus mutans"],
     caseVignette: true,
-    tags: ["Pneumococcus", "Diagnostics", "Optochin", "Bile Solubility"]
+    tags: ["Pneumococcus", "Diagnostics", "Optochin", "Bile Solubility"],
+    image: {
+      src: "/images/figures/strep-pneumo-gram.jpeg",
+      caption: "Gram stain of Streptococcus pneumoniae in sputum, revealing distinctive Gram-positive, lancet-shaped diplococci surrounded by prominent unstained clear capsular halos.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 19.7",
+      alt: "Gram stain of Streptococcus pneumoniae"
+    }
   },
 
   // ==========================================
@@ -192,7 +216,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Bacillus anthracis", "Streptococcus pyogenes", "Neisseria meningitidis", "Haemophilus influenzae", "Escherichia coli"],
     caseVignette: true,
-    tags: ["Anthrax", "Capsule", "Poly-D-glutamate", "Zoonosis"]
+    tags: ["Anthrax", "Capsule", "Poly-D-glutamate", "Zoonosis"],
+    image: {
+      src: "/images/figures/anthrax-eschar.png",
+      caption: "Cutaneous anthrax presenting as a pathognomonic painless, depressed coal-black necrotic eschar surrounded by extensive non-pitting gelatinous edema and erythematous induration.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 20.3",
+      alt: "Cutaneous anthrax eschar"
+    }
   },
   {
     id: "SIMPIC-BAC-007",
@@ -223,7 +253,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Listeria monocytogenes", "Corynebacterium diphtheriae", "Bacillus cereus", "Erysipelothrix rhusiopathiae", "Nocardia asteroides"],
     caseVignette: true,
-    tags: ["Listeria", "ActA", "Actin Comet", "Intracellular Pathogen"]
+    tags: ["Listeria", "ActA", "Actin Comet", "Intracellular Pathogen"],
+    image: {
+      src: "/images/figures/listeria-gram.jpeg",
+      caption: "Gram stain of Listeria monocytogenes in culture, showing short, regular, non-spore-forming Gram-positive bacilli appearing as single cells, pairs, or short chains resembling corynebacteria.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 21.1",
+      alt: "Listeria monocytogenes Gram stain"
+    }
   },
   {
     id: "SIMPIC-BAC-008",
@@ -320,7 +356,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Pseudomonas aeruginosa", "Corynebacterium diphtheriae"],
     caseVignette: true,
-    tags: ["Pseudomonas", "Exotoxin A", "Ecthyma Gangrenosum", "EF-2"]
+    tags: ["Pseudomonas", "Exotoxin A", "Ecthyma Gangrenosum", "EF-2"],
+    image: {
+      src: "/images/figures/pseudomonas-burn.jpeg",
+      caption: "Pseudomonas aeruginosa wound infection and ecthyma gangrenosum in a burn patient, showing dark hemorrhagic necrosis and signature blue-green pyocyanin purulence.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 27.3",
+      alt: "Pseudomonas aeruginosa burn infection"
+    }
   },
 
   // ==========================================
@@ -355,7 +397,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Morbillivirus"],
     caseVignette: true,
-    tags: ["Measles", "Paramyxovirus", "Koplik Spots", "Hemagglutinin"]
+    tags: ["Measles", "Paramyxovirus", "Koplik Spots", "Hemagglutinin"],
+    image: {
+      src: "/images/figures/measles-koplik.jpeg",
+      caption: "Pathognomonic Koplik spots on buccal mucosa in a pediatric patient with measles, appearing as tiny, irregular red spots with central bluish-white specks opposite the molars.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 48.5",
+      alt: "Measles Koplik spots"
+    }
   },
   {
     id: "SIMPIC-VIR-002",
@@ -386,7 +434,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Epstein-Barr virus", "Herpesvirus"],
     caseVignette: true,
-    tags: ["EBV", "CD21", "Mononucleosis", "Heterophile Antibody"]
+    tags: ["EBV", "CD21", "Mononucleosis", "Heterophile Antibody"],
+    image: {
+      src: "/images/figures/ebv-downey-cell.jpeg",
+      caption: "Reactive atypical CD8+ cytotoxic T lymphocyte (Downey cell) on peripheral blood smear of an infectious mononucleosis patient, showing abundant cytoplasm scalloping around adjacent red blood cells.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 43.13",
+      alt: "EBV Downey cell atypical lymphocyte"
+    }
   },
   {
     id: "SIMPIC-VIR-003",
@@ -452,7 +506,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Histoplasma capsulatum", "Blastomyces dermatitidis", "Coccidioides immitis", "Paracoccidioides brasiliensis", "Cryptococcus neoformans"],
     caseVignette: true,
-    tags: ["Histoplasma", "Dimorphic Fungi", "Macrophages", "Mycology"]
+    tags: ["Histoplasma", "Dimorphic Fungi", "Macrophages", "Mycology"],
+    image: {
+      src: "/images/figures/histo-intracellular.jpeg",
+      caption: "Giemsa stain of a bone marrow biopsy showing tiny (2–4 µm) oval intracellular budding yeast forms of Histoplasma capsulatum densely packed within host reticuloendothelial macrophages.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 60.4",
+      alt: "Histoplasma capsulatum in macrophages"
+    }
   },
   {
     id: "SIMPIC-MYC-002",
@@ -483,7 +543,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Cryptococcus neoformans", "Cryptococcus gattii", "Aspergillus fumigatus", "Saccharomyces cerevisiae"],
     caseVignette: true,
-    tags: ["Cryptococcus", "GXM", "Capsule", "India Ink", "Meningitis"]
+    tags: ["Cryptococcus", "GXM", "Capsule", "India Ink", "Meningitis"],
+    image: {
+      src: "/images/figures/crypto-gram-halo.jpeg",
+      caption: "Gram stain of Cryptococcus neoformans exhibiting round, budding yeast cells surrounded by wide, unstained clear halos created by the prominent glucuronoxylomannan (GXM) polysaccharide capsule.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 60.2",
+      alt: "Cryptococcus neoformans capsule halo"
+    }
   },
 
   // ==========================================
@@ -518,7 +584,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Plasmodium falciparum", "Plasmodium vivax", "Plasmodium ovale"],
     caseVignette: true,
-    tags: ["Malaria", "PfEMP1", "Cytoadherence", "Parasitology"]
+    tags: ["Malaria", "PfEMP1", "Cytoadherence", "Parasitology"],
+    image: {
+      src: "/images/figures/plasmodium-gametocyte.jpeg",
+      caption: "Thin Giemsa blood smear showing the pathognomonic diagnostic crescent- or sausage-shaped mature gametocyte of Plasmodium falciparum with central chromatin and hemozoin pigment.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 73.3",
+      alt: "Plasmodium falciparum gametocyte"
+    }
   },
   {
     id: "SIMPIC-PAR-002",
@@ -550,7 +622,13 @@ export const microbiologyQuestions: Question[] = [
     ],
     latinNames: ["Strongyloides stercoralis", "Trichinella spiralis", "Diphyllobothrium latum", "Onchocerca volvulus"],
     caseVignette: true,
-    tags: ["Strongyloides", "Autoinfection", "Larva Currens", "Hyperinfection"]
+    tags: ["Strongyloides", "Autoinfection", "Larva Currens", "Hyperinfection"],
+    image: {
+      src: "/images/figures/strongyloides-larva.jpeg",
+      caption: "Wet mount of stool revealing an active rhabditiform larva of Strongyloides stercoralis with a short buccal cavity and prominent genital primordium, distinguishing it from hookworm larvae.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 74.12",
+      alt: "Strongyloides stercoralis rhabditiform larva"
+    }
   },
 
   // ==========================================
