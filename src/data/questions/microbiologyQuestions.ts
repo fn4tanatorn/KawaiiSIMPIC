@@ -219,9 +219,9 @@ export const microbiologyQuestions: Question[] = [
     tags: ["Anthrax", "Capsule", "Poly-D-glutamate", "Zoonosis"],
     image: {
       src: "/images/figures/anthrax-eschar.png",
-      caption: "Cutaneous anthrax presenting as a pathognomonic painless, depressed coal-black necrotic eschar surrounded by extensive non-pitting gelatinous edema and erythematous induration.",
+      caption: "Cutaneous anthrax demonstrating marked erythema, brawny gelatinous edema, and central vesicle rupture with early necrotic eschar formation.",
       sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 20.3",
-      alt: "Cutaneous anthrax eschar"
+      alt: "Cutaneous anthrax lesion"
     }
   },
   {
@@ -400,9 +400,9 @@ export const microbiologyQuestions: Question[] = [
     tags: ["Measles", "Paramyxovirus", "Koplik Spots", "Hemagglutinin"],
     image: {
       src: "/images/figures/measles-koplik.jpeg",
-      caption: "Pathognomonic Koplik spots on buccal mucosa in a pediatric patient with measles, appearing as tiny, irregular red spots with central bluish-white specks opposite the molars.",
+      caption: "Pathognomonic Koplik spots on the buccal mucosa opposite the lower molars, visualized using a tongue depressor, appearing as discrete bluish-white specks on an erythematous base alongside early facial exanthem.",
       sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 48.5",
-      alt: "Measles Koplik spots"
+      alt: "Measles Koplik spots on buccal mucosa"
     }
   },
   {
@@ -509,9 +509,9 @@ export const microbiologyQuestions: Question[] = [
     tags: ["Histoplasma", "Dimorphic Fungi", "Macrophages", "Mycology"],
     image: {
       src: "/images/figures/histo-intracellular.jpeg",
-      caption: "Giemsa stain of a bone marrow biopsy showing tiny (2–4 µm) oval intracellular budding yeast forms of Histoplasma capsulatum densely packed within host reticuloendothelial macrophages.",
-      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 60.4",
-      alt: "Histoplasma capsulatum in macrophages"
+      caption: "Giemsa stain showing numerous tiny (2–4 µm) oval, intracellular budding yeast forms of Histoplasma capsulatum densely packed within the cytoplasm of a host reticuloendothelial macrophage.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 64.10",
+      alt: "Histoplasma capsulatum in macrophage"
     }
   },
   {
@@ -546,9 +546,9 @@ export const microbiologyQuestions: Question[] = [
     tags: ["Cryptococcus", "GXM", "Capsule", "India Ink", "Meningitis"],
     image: {
       src: "/images/figures/crypto-gram-halo.jpeg",
-      caption: "Gram stain of Cryptococcus neoformans exhibiting round, budding yeast cells surrounded by wide, unstained clear halos created by the prominent glucuronoxylomannan (GXM) polysaccharide capsule.",
-      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 60.2",
-      alt: "Cryptococcus neoformans capsule halo"
+      caption: "India ink negative stain preparation of cerebrospinal fluid demonstrating round, budding yeast cells of Cryptococcus neoformans surrounded by wide, prominent, unstained clear halos created by the extracellular glucuronoxylomannan (GXM) polysaccharide capsule.",
+      sourceRef: "Murray Medical Microbiology 9th Ed, Fig. 65.8",
+      alt: "Cryptococcus neoformans India ink capsule halo"
     }
   },
 
@@ -1178,9 +1178,9 @@ export const microbiologyQuestions: Question[] = [
   ],
   "image": {
     "src": "/images/figures/helicobacter-sem.jpeg",
-    "caption": "Scanning electron micrograph of curved, spiral-shaped Helicobacter pylori colonizing human gastric epithelial cell surfaces beneath the protective mucus layer.",
+    "caption": "Scanning electron micrograph of Helicobacter pylori in culture, showing curved bacillary and coccoid forms bound to spherical paramagnetic beads used in immunomagnetic separation.",
     "sourceRef": "Murray Medical Microbiology 9th Ed, Fig. 28.2",
-    "alt": "Helicobacter pylori SEM"
+    "alt": "Helicobacter pylori SEM on paramagnetic beads"
   }
 },
 {
@@ -1264,9 +1264,9 @@ export const microbiologyQuestions: Question[] = [
   ],
   "image": {
     "src": "/images/figures/entamoeba-trophozoite.jpeg",
-    "caption": "Microscopic morphology of Entamoeba histolytica: (A) Trophozoite actively exhibiting erythrophagocytosis with ingested red blood cells in the cytoplasm, and (B) mature infective quadrinucleate cyst with blunt chromatoid bars.",
+    "caption": "Iron hematoxylin / trichrome stain of an Entamoeba histolytica trophozoite actively exhibiting erythrophagocytosis, showing multiple dark ingested erythrocytes within the cytoplasm and a single nucleus with a delicate central karyosome.",
     "sourceRef": "Murray Medical Microbiology 9th Ed, Fig. 72.2",
-    "alt": "Entamoeba histolytica trophozoite and cyst"
+    "alt": "Entamoeba histolytica trophozoite with ingested RBCs"
   }
 },
 {
@@ -1311,9 +1311,9 @@ export const microbiologyQuestions: Question[] = [
   ],
   "image": {
     "src": "/images/figures/giardia-trophozoite.jpeg",
-    "caption": "Diagnostic morphology of Giardia duodenalis: (A) Trophozoite showing characteristic binucleate pear-shaped morphology and ventral adhesive disk, and (B) oval quadrinucleate cyst with central axostyle.",
+    "caption": "Stool microscopy demonstrating the classic diagnostic morphology of a Giardia duodenalis trophozoite: teardrop/pear-shaped body with two symmetrical nuclei, central axostyle, and ventral concave adhesive sucking disk.",
     "sourceRef": "Murray Medical Microbiology 9th Ed, Fig. 72.3",
-    "alt": "Giardia duodenalis trophozoite and cyst"
+    "alt": "Giardia duodenalis trophozoite"
   }
 },
 {
