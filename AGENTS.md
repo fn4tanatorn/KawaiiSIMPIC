@@ -49,6 +49,31 @@ KawaiiSIMPIC/
 
 ---
 
+## 📚 Reference Materials (SIMPIC Official Sources)
+
+### Microbiology
+| Textbook | Edition | Authors |
+|---|---|---|
+| **Medical Microbiology** | 10th | Patrick R. Murray, Ken Rosenthal, Michael A. Pfaller |
+| **Jawetz, Melnick, & Adelberg's Medical Microbiology** | 29th | Stefan Riedel, Stephen A. Morse, Timothy A. Mietzner, Steve Miller |
+
+### Parasitology
+| Textbook | Edition | Authors |
+|---|---|---|
+| **Diagnostic Medical Parasitology** | 6th | Lynne Shore Garcia |
+
+### Tropical Medicine
+| Textbook | Edition | Authors |
+|---|---|---|
+| **Manson's Tropical Diseases** | 24th | Jeremy Farrar, Peter J Hotez, Thomas Junghanss, Gagandeep Kang, David Lalloo, Nicholas J. White, Patricia J. Garcia |
+
+### Immunology
+| Textbook | Edition | Authors |
+|---|---|---|
+| **Cellular and Molecular Immunology** | 11th | Abul K. Abbas, Andrew H. Lichtman, Shiv Pillai |
+
+---
+
 ## 🔗 Related Resources
 
 - **SIMPIC Competition:** Student International Medical Preclinical Integrated Competition
