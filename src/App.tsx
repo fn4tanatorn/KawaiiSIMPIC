@@ -12,14 +12,45 @@ import { StatsModal } from './components/StatsModal';
 
 export function App() {
   const [progress, setProgress] = useState(loadProgress);
-  const [selectedSource, setSelectedSource] = useState<TextbookSource | 'all'>('all');
-  const [selectedSubject, setSelectedSubject] = useState<SubjectType | 'all'>('all');
+  const [selectedSource, setSelectedSource] = useState<TextbookSource | 'all'>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const s = params.get('source')?.toLowerCase();
+    if (s === 'jawetz' || s === 'jawetz 28th ed') return 'Jawetz 28th Ed';
+    if (s === 'murray' || s === 'murray 9th ed') return 'Murray 9th Ed';
+    return 'all';
+  });
+  const [selectedSubject, setSelectedSubject] = useState<SubjectType | 'all'>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const sub = params.get('subject');
+    if (sub && ['Bacteriology', 'Virology', 'Mycology', 'Parasitology', 'Gen & Immuno'].includes(sub)) {
+      return sub as SubjectType;
+    }
+    return 'all';
+  });
   const [filterStatus, setFilterStatus] = useState<FilterStatus>('all');
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = parseInt(params.get('q') || '1', 10);
+    return isNaN(q) || q < 1 ? 0 : q - 1;
+  });
   const [mode, setMode] = useState<'practice' | 'speed'>('practice');
   const [isStatsOpen, setIsStatsOpen] = useState<boolean>(false);
   const [mascotMood, setMascotMood] = useState<MascotMood>('thinking');
   const [mascotMessage, setMascotMessage] = useState<string>('');
+
+  // Synchronize URL parameters for deep-linking
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    params.set('q', (currentIndex + 1).toString());
+    if (selectedSource !== 'all') params.set('source', selectedSource);
+    else params.delete('source');
+    if (selectedSubject !== 'all') params.set('subject', selectedSubject);
+    else params.delete('subject');
+
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    window.history.replaceState(null, '', newUrl);
+  }, [currentIndex, selectedSource, selectedSubject]);
+
 
   // Synchronize filtered questions
   const filteredQuestions = useMemo(() => {
