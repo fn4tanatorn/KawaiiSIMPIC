@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Cute Petri dish base -->
+  <circle cx="32" cy="32" r="28" fill="#FDF2F8" stroke="#F43F5E" stroke-width="3"/>
+  <circle cx="32" cy="32" r="23" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="2" stroke-dasharray="2 4"/>
+  <!-- Bacterial colonies -->
+  <circle cx="24" cy="26" r="5" fill="#10B981"/>
+  <circle cx="40" cy="24" r="6" fill="#F59E0B"/>
+  <circle cx="32" cy="40" r="7" fill="#6366F1"/>
+  <circle cx="21" cy="39" r="3.5" fill="#EC4899"/>
+  <!-- Cute kawaii eyes and smile in center -->
+  <circle cx="30" cy="30" r="1.5" fill="#1E293B"/>
+  <circle cx="34" cy="30" r="1.5" fill="#1E293B"/>
+  <path d="M31 33 Q32 34.5 33 33" stroke="#1E293B" stroke-width="1" stroke-linecap="round" fill="none"/>
+  <!-- Sparkles -->
+  <path d="M47 15 L48 18 L51 19 L48 20 L47 23 L46 20 L43 19 L46 18 Z" fill="#FBBF24"/>
+</svg>
